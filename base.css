@@ -29,8 +29,7 @@ p{
 }
 #card{
     background-color: hsl(216, 50%, 16%);
-    max-width: 400px;
-    width: 35%;
+    width: 350px;
     height: 600px;
     display: flex;
     align-items: center;
@@ -41,19 +40,31 @@ p{
 #img
 {
     border-radius: 10px;
+    height: 300px;
 }
-#img:active{
-        color: hsl(178, 100%, 50%); 
+#img:active
+{
+    background:hsl(178, 100%, 50%);
+    background-image: url('/images/icon-view.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#img:active img{
+    opacity: 0.5;
+}
+img::after:active{
+    background-color: aqua;
 }
 img{
-    width: 100%;
+    width: 300px;
+    border-radius: 10px;
 }
 #nftInfo{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 15px;
 }
 #buyInfo{
@@ -73,6 +84,16 @@ img{
     display: flex;
     align-items: center;
     color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+#clock{
+    display: flex;
+    flex: 1;
+    align-content: center;
+}
+#clock img{
+    width: 20%;
+    margin-right: 5px;
 }
 #creator{
     display: flex;
@@ -80,6 +101,7 @@ img{
     height: 10%;
     width: 100%;
     align-items: center;
+    padding-top: 10px;
 }
 #creator p{
     display: flex;
@@ -100,5 +122,5 @@ img{
     width: 10%;
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 50px;
-    margin-right: 20px;
+    margin-right: 15px;
 }
